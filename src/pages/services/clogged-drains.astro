@@ -1,0 +1,61 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Clogged Drain Repair Santa Barbara | ${SITE_TITLE}`} description="Fast clogged drain repair in Santa Barbara. We clear stubborn blockages in sinks, showers, toilets, and main lines." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Clogged Drain Repair</h1>
+			<p>Quick, effective solutions for stubborn clogs throughout your home or business.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Clear Clogged Drains Fast</h2>
+					<p>Whether it’s a slow kitchen sink, a backed-up shower, or a toilet that won’t flush properly, clogged drains need professional attention. Chemical drain cleaners often make problems worse and can damage pipes. We use mechanical methods that are safer and more effective.</p>
+					
+					<h3>Common Causes We Fix</h3>
+					<ul>
+						<li>Grease and food buildup in kitchen lines</li>
+						<li>Hair and soap scum in bathroom drains</li>
+						<li>Tree roots invading sewer lines</li>
+						<li>Foreign objects and debris</li>
+						<li>Mineral scale and hard water deposits</li>
+					</ul>
+
+					<p>Our technicians arrive with the tools to diagnose and clear most clogs on the first visit. For complex issues, we recommend camera inspection to see exactly what’s happening inside the pipes.</p>
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE} Now</a>
+				</div>
+				<div>
+					<h3>Same-Day Service Available</h3>
+					<p>Many clogged drain issues can be resolved the same day you call. We prioritize emergency backups and overflowing fixtures.</p>
+					<a href="/contact/" class="btn btn-secondary">Schedule Service</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Clogged Drain? We’re Ready to Help</h2>
+			<p>Santa Barbara’s trusted drain specialists.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

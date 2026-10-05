@@ -1,0 +1,73 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Our Services | ${SITE_TITLE}`} description="Professional drain cleaning, clogged drain repair, hydro jetting, camera inspection, and emergency plumbing services in Santa Barbara, CA." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Our Drain Cleaning Services</h1>
+			<p>Fast, reliable solutions for clogged drains, slow pipes, and sewer line issues in Santa Barbara.</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Thorough cleaning of kitchen, bathroom, laundry, and main line drains to restore full flow and prevent future clogs.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Clogged Drain Repair</h3>
+					<p>Quick diagnosis and clearing of stubborn clogs caused by grease, hair, roots, or debris. Same-day service available.</p>
+					<a href="/services/clogged-drains/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Hydro Jetting</h3>
+					<p>High-pressure water jetting that scours pipe walls clean, removing years of buildup and restoring pipes to near-original condition.</p>
+					<a href="/services/hydro-jetting/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>Video camera inspection of drain and sewer lines to locate blockages, breaks, roots, or other problems with precision.</p>
+					<a href="/services/camera-inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Drain Service</h3>
+					<p>24/7 emergency response for overflowing toilets, backed-up sinks, or sewage issues. We arrive fast when you need us most.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled drain maintenance plans to keep your pipes flowing freely and avoid costly emergency calls.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need Drain Cleaning in Santa Barbara?</h2>
+			<p>Call now for fast service or request a free estimate online.</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Request a Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

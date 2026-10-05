@@ -1,0 +1,66 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Camera Inspection Santa Barbara | ${SITE_TITLE}`} description="Video camera inspection of drain and sewer lines in Santa Barbara. Locate clogs, roots, breaks, and more with precision." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Camera Inspection Services</h1>
+			<p>See exactly what’s happening inside your pipes with high-definition video inspection.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Accurate Diagnosis with Video Camera Inspection</h2>
+					<p>Guesswork is expensive. Our sewer and drain camera inspections let us locate the exact cause and location of problems without unnecessary digging or guesswork. A flexible camera is inserted into the line and feeds live video so we (and you) can see roots, cracks, offsets, grease buildup, or collapsed sections.</p>
+					
+					<h3>When You Need a Camera Inspection</h3>
+					<ul>
+						<li>Recurring or mysterious clogs</li>
+						<li>Before buying or selling a property</li>
+						<li>Suspected root intrusion or pipe damage</li>
+						<li>After a major backup</li>
+						<li>To plan trenchless or traditional repairs</li>
+					</ul>
+
+					<p>We provide a clear explanation of findings and recommended next steps. Many customers appreciate the peace of mind that comes from knowing the true condition of their underground lines.</p>
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Schedule Inspection</a>
+				</div>
+				<div>
+					<h3>What You Receive</h3>
+					<ul>
+						<li>On-site video review</li>
+						<li>Clear explanation of findings</li>
+						<li>Written recommendations when needed</li>
+						<li>Option to record or share footage</li>
+					</ul>
+					<a href="/contact/" class="btn btn-secondary">Request Service</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Know What’s in Your Pipes</h2>
+			<p>Book a camera inspection in Santa Barbara.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

@@ -1,0 +1,106 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PHONE, PHONE_TEL } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
+
+	<section class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Professional Drain Cleaning in Santa Barbara, CA</h1>
+				<p>Fast, reliable clogged drain repair, hydro jetting, and camera inspections for homes and businesses. Local, licensed, and ready when you need us.</p>
+				<div class="hero-buttons">
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+					<a href="/contact/" class="btn btn-secondary">Request a Free Quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Drain Cleaning Services</h2>
+				<p>From simple clogs to complex sewer line issues, we have the tools and experience to get your drains flowing again.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Thorough cleaning of kitchen, bathroom, laundry, and main line drains to restore full flow and prevent future problems.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Clogged Drain Repair</h3>
+					<p>Quick diagnosis and clearing of stubborn clogs caused by grease, hair, roots, or debris. Same-day service available.</p>
+					<a href="/services/clogged-drains/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Hydro Jetting</h3>
+					<p>High-pressure water jetting that scours pipe walls clean, removing years of buildup for long-lasting results.</p>
+					<a href="/services/hydro-jetting/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>Video camera inspection of drain and sewer lines to locate blockages, breaks, roots, or other issues with precision.</p>
+					<a href="/services/camera-inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Service</h3>
+					<p>24/7 response for overflowing toilets, backed-up sinks, or sewage issues. We arrive fast when you need us most.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled drain maintenance to keep pipes clear and avoid costly emergency calls.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<div class="section-header">
+				<h2>What Santa Barbara Customers Say</h2>
+				<p>Real feedback from local homeowners and businesses who trusted us with their drain problems.</p>
+			</div>
+			<div class="testimonials">
+				<div class="testimonial">
+					<blockquote>“Our kitchen sink was completely clogged. They came the same day, cleared it with hydro jetting, and explained how to prevent it. Professional and fair pricing.”</blockquote>
+					<cite>— Maria L., Santa Barbara, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Emergency call on a Sunday when the main line backed up. They arrived quickly, diagnosed with a camera, and fixed it without tearing up the yard. Highly recommend.”</blockquote>
+					<cite>— David R., Goleta, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Used them for camera inspection before buying a home. Clear report and honest advice. Saved us from a potential expensive surprise.”</blockquote>
+					<cite>— Jennifer K., Montecito, CA</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready for Fast Drain Cleaning?</h2>
+			<p>Local, licensed, and insured. Serving Santa Barbara, Goleta, Carpinteria, Montecito, and nearby communities.</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Request a Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

@@ -1,0 +1,72 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning Santa Barbara | ${SITE_TITLE}`} description="Professional drain cleaning in Santa Barbara, CA. Clear kitchen, bathroom, and main line drains. Fast local service." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Drain Cleaning Services</h1>
+			<p>Restore full flow to your drains with professional cleaning in Santa Barbara.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Expert Drain Cleaning for Santa Barbara Homes & Businesses</h2>
+					<p>Slow drains and recurring clogs are more than an annoyance — they can lead to backups, water damage, and costly repairs. Our licensed team provides thorough drain cleaning using modern equipment tailored to residential and commercial plumbing systems.</p>
+					
+					<h3>What We Clean</h3>
+					<ul>
+						<li>Kitchen sink drains and garbage disposal lines</li>
+						<li>Bathroom sinks, showers, and bathtubs</li>
+						<li>Laundry and utility drains</li>
+						<li>Main sewer lines</li>
+						<li>Floor drains and commercial grease lines</li>
+					</ul>
+
+					<h3>Our Process</h3>
+					<p>We start with a careful assessment, then use the right combination of snaking, hydro jetting, or enzyme treatments depending on the type and severity of the blockage. After clearing, we verify full flow and offer tips to keep drains clear longer.</p>
+
+					<p>Serving Santa Barbara, Goleta, Carpinteria, Montecito, and nearby communities.</p>
+					<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE} for Service</a>
+				</div>
+				<div>
+					<h3>Why Choose Us</h3>
+					<ul>
+						<li>Local Santa Barbara team</li>
+						<li>Licensed & insured</li>
+						<li>Upfront pricing</li>
+						<li>Same-day appointments often available</li>
+						<li>Clean, respectful technicians</li>
+					</ul>
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-secondary">Request Free Estimate</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Don’t Let Clogs Get Worse</h2>
+			<p>Call today for professional drain cleaning in Santa Barbara.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>
